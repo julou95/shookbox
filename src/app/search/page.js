@@ -7,7 +7,7 @@ export default function SearchPage() {
     const searchParams = useSearchParams()
     const searchTerm = searchParams.get('q') || ''
 
-    const filtered = bands.filter(band => band?.name?.toLowerCase()?.includes(searchTerm))
+    const filtered = bands.filter(band => band?.name?.toLowerCase()?.includes(searchTerm.toLowerCase()))
     return (
         <main>
             <h2>Search for: <b>{searchTerm}</b></h2>
