@@ -63,11 +63,13 @@ export default function BandPage({ params }) {
                 <div className="col-span-6 lg:col-span-2 p-5">
                     <h1>Info</h1>
                     <hr />
-                    <div className="flex mb-2"><Icon name="location" size={24} invert style="mr-2" />Bern</div>
-                    <div className="flex mb-10"><Icon name="location" size={24} invert style="mr-2" />Bern</div>
+                    <div className="flex mb-2"><Icon name="note" size={24} invert style="mr-2" />{band.genres?.join(', ') || '-'}</div>
+                    <div className="flex mb-2"><Icon name="location" size={24} invert style="mr-2" />{band.location || '-'}</div>
+                    <div className="flex mb-2"><Icon name="date" size={24} invert style="mr-2" />{band.foundingDate || '-'}</div>
+                    <div className="flex mb-2"><Icon name="website" size={24} invert style="mr-2" />{band.website ? <a className="underline" target="_blank" href={band.website}>{band.website?.split('www.')[1]}</a> : '-'}</div>
                     {
                         band.members.length &&
-                        <>
+                        <div className="mt-10">
                             <h1>Members</h1>
                             <hr />
                             {
@@ -77,7 +79,7 @@ export default function BandPage({ params }) {
                                     </Link>
                                 ))
                             }
-                        </>
+                        </div>
                     }
                 </div>
             </div>
