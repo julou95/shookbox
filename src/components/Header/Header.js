@@ -27,10 +27,10 @@ export default function Header() {
 
     return (
         <>
-            <div className="sticky top-0 py-2 shadow-md opacity-95 bg-slate-50 text-slate-900 z-10">
-                <div className="container flex justify-between items-center w-full">
+            <div className="sticky top-0 py-2 shadow-lg opacity-95 bg-slate-50 text-slate-900 z-10">
+                <div className="container flex justify-between items-center w-full px-3 md:px-5">
                     <Link className="flex items-center" href="/">
-                        <img className="w-14 rounded-full mr-2 md:mr-5" alt="Shookbox Logo" src="/logos/logo-96.png" />
+                        <img className="w-14 rounded-full mr-2 md:mr-3" alt="Shookbox Logo" src="/logos/logo-96.png" />
                         <h1>Shookbox</h1>
                     </Link>
                     <div className="flex flex-row">

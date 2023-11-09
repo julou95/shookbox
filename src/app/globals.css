@@ -32,7 +32,7 @@ h1 {
 
 .bandImg {
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 60%;
 }
 
 .imgWrapper:hover .bandImg {

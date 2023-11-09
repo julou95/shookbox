@@ -87,7 +87,7 @@ const useStore = create((set) => ({
             name: 'Muse',
             imgUrl: 'https://www.laut.de/Muse/muse-220512.jpg',
             description: 'test description',
-            genres: ['rock', 'stadion rock'],
+            genres: ['rock', 'stadium rock'],
             location: 'Teignmouth, UK',
             foundingDate: '1994',
             website: 'https://www.muse.mu',
