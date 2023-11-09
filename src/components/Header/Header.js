@@ -31,7 +31,7 @@ export default function Header() {
             <div className="sticky top-0 py-2 shadow-md bg-slate-950 text-slate-50 z-10">
                 <div className="container flex justify-between items-center w-full">
                     <Link className="flex items-center" href="/">
-                        <Image className="w-14 rounded-full mr-2 md:mr-5" width={56} height={56} src="/logos/logo-96.png" />
+                        <Image className="w-14 rounded-full mr-2 md:mr-5" alt="Shookbox Logo" width={56} height={56} src="/logos/logo-96.png" />
                         <h1>Shookbox</h1>
                     </Link>
                     <div className="flex flex-row">
