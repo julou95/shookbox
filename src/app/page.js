@@ -9,22 +9,27 @@ export default function Home() {
 
   return (
     <main>
+    {
+        currentUser.id &&
+        <div className="mb-10">
+            <div className="flex flex-row justify-between items-center md:text-lg">
+                <h1>My Bands </h1>
+                <Link className="underline-offset-8 hover:underline" href={`/user/${currentUser.id}`}>
+                    Show All
+                </Link>
+            </div>
+            <hr />
+            <BandList bands={myBands} />
+        </div>
+    }
       <div className="flex flex-row justify-between items-center md:text-lg">
           <h1>New Bands </h1>
           <Link className="underline-offset-8 hover:underline" href="/bands">
-            Alle anzeigen
+              Show All
           </Link>
       </div>
       <hr />
-      <BandList bands={bands.slice(-3)} />
-        {
-            currentUser.id &&
-                <div className="mt-10">
-                    <h1>My Bands</h1>
-                    <hr />
-                    <BandList bands={myBands} />
-                </div>
-        }
+      <BandList bands={bands.slice(-4)} />
     </main>
   )
 }

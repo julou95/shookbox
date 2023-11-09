@@ -15,6 +15,8 @@ const useStore = create((set) => ({
         { id: 5, role: 1, name: 'Kuno', imgUrl: 'https://placehold.co/400x400' },
         { id: 6, role: 1, name: 'Mike', imgUrl: 'https://placehold.co/400x400' },
         { id: 7, role: 1, name: 'Matt', imgUrl: 'https://placehold.co/400x400' },
+        { id: 8, role: 2, name: 'Löru', imgUrl: 'https://placehold.co/400x400' },
+        { id: 9, role: 2, name: 'Stampfli', imgUrl: 'https://placehold.co/400x400' },
     ],
     bands: [
         {
@@ -83,8 +85,8 @@ const useStore = create((set) => ({
             members: [
                 { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
                 { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
-                { id: 3, role: 2, name: 'Löru', imgUrl: 'https://placehold.co/400x400' },
-                { id: 4, role: 2, name: 'Stampfli', imgUrl: 'https://placehold.co/400x400' },
+                { id: 8, role: 2, name: 'Löru', imgUrl: 'https://placehold.co/400x400' },
+                { id: 9, role: 2, name: 'Stampfli', imgUrl: 'https://placehold.co/400x400' },
             ]
         },
     ],
