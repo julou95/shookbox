@@ -22,7 +22,7 @@ const useStore = create((set) => ({
         {
             bandId: 1,
             name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: '/lllg_logo.png',
             description: 'test description',
             members: [
                 { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
@@ -34,7 +34,7 @@ const useStore = create((set) => ({
         {
             bandId: 2,
             name: 'Side Chick',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: 'https://ih1.redbubble.net/image.1750240666.0230/mo,small,flatlay,product_square,600x600.jpg',
             description: 'test description',
             members: [
                 { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
@@ -46,7 +46,7 @@ const useStore = create((set) => ({
         {
             bandId: 3,
             name: 'Züri West',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: 'https://media.hitparade.ch/cover/800/zueri_west-zueri_west_a.jpg',
             description: 'test description',
             members: [
                 { id: 5, role: 1, name: 'Kuno', imgUrl: 'https://placehold.co/400x400' },
@@ -58,7 +58,7 @@ const useStore = create((set) => ({
         {
             bandId: 4,
             name: 'Royal Blood',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: 'https://m.media-amazon.com/images/I/812Y4v68TYL._UF1000,1000_QL80_.jpg',
             description: 'test description',
             members: [
                 { id: 6, role: 1, name: 'Mike', imgUrl: 'https://placehold.co/400x400' },
@@ -68,7 +68,7 @@ const useStore = create((set) => ({
         {
             bandId: 6,
             name: 'Muse',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: 'https://www.laut.de/Muse/muse-220512.jpg',
             description: 'test description',
             members: [
                 { id: 7, role: 1, name: 'Matt', imgUrl: 'https://placehold.co/400x400' },
@@ -80,7 +80,7 @@ const useStore = create((set) => ({
         {
             bandId: 7,
             name: 'No Valid Name',
-            imgUrl: 'https://placehold.co/400x400',
+            imgUrl: '/nvn_logo.jpeg',
             description: 'test description',
             members: [
                 { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },

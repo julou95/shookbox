@@ -15,7 +15,7 @@ export default function BandList({ bands = [], addNew = false, title }) {
                     <Link href={`/band/${band.bandId}`} key={band.bandId}>
                         <div className="relative flex flex-col border-2 border-slate-900 bg-slate-900 transition-all rounded-lg hover:shadow-lg">
                             <div className="imgWrapper rounded-t-md">
-                                <div className="bandImg rounded-t-md bg-no-repeat bg-cover transition-all" style={{ backgroundImage: `url('${band.imgUrl}')` }}></div>
+                                <div className="bandImg rounded-t-md bg-no-repeat bg-cover bg-center transition-all" style={{ backgroundImage: `url('${band.imgUrl}')` }}></div>
                             </div>
                             <div className="absolute bottom-0 w-full bg-gradient-to-t from-slate-900 text-white p-5 text-xl font-semibold">{band.name}</div>
                         </div>

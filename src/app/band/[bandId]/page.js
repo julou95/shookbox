@@ -18,7 +18,7 @@ export default function BandPage({ params }) {
         <main className="">
             <div className="w-full h-72 rounded-t-lg bg-red-900 flex items-end bg-cover bg-center bg-no-repeat shadow-xl" style={{ backgroundImage: `url('${band.imgUrl}')`}}>
                 <div className="flex items-center w-full pt-20 pb-5 px-5 text-2xl text-white bg-gradient-to-t from-slate-900">
-                    <div className="rounded-full shrink-0 w-24 h-24 md:w-32 md:h-32 border-white border-4 mr-5 bg-cover" style={{ backgroundImage: `url('${band.imgUrl}')` }}></div>
+                    <div className="rounded-full shrink-0 w-24 h-24 md:w-32 md:h-32 border-white border-4 mr-5 bg-cover bg-center" style={{ backgroundImage: `url('${band.imgUrl}')` }}></div>
                     <h1>{band.name}</h1>
                 </div>
             </div>
