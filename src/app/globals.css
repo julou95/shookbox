@@ -17,11 +17,39 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(2 6 23);
+  background-color: rgb(249 250 251);
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.imgWrapper {
+  overflow: hidden;
+}
+
+.bandImg {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.imgWrapper:hover .bandImg {
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: slategray;
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid slategray;
+}
+
+hr {
+  margin-bottom: 1.25rem;
 }

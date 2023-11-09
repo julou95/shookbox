@@ -1,43 +1,93 @@
 import { create } from 'zustand'
 
 const useStore = create((set) => ({
-    user: {},
+    currentUser: {
+        id: 1,
+        accessToken: '1234',
+        refreshToken: '2345',
+        name: 'Louis'
+    },
+    users: [
+        { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
+        { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+        { id: 3, role: 2, name: 'Bello', imgUrl: 'https://placehold.co/400x400' },
+        { id: 4, role: 2, name: 'Döbi', imgUrl: 'https://placehold.co/400x400' },
+        { id: 5, role: 1, name: 'Kuno', imgUrl: 'https://placehold.co/400x400' },
+        { id: 6, role: 1, name: 'Mike', imgUrl: 'https://placehold.co/400x400' },
+        { id: 7, role: 1, name: 'Matt', imgUrl: 'https://placehold.co/400x400' },
+    ],
     bands: [
         {
             bandId: 1,
             name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+                { id: 3, role: 2, name: 'Bello', imgUrl: 'https://placehold.co/400x400' },
+                { id: 4, role: 2, name: 'Döbi', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
         {
             bandId: 2,
-            name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            name: 'Side Chick',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+                { id: 3, role: 2, name: 'Yeni', imgUrl: 'https://placehold.co/400x400' },
+                { id: 4, role: 2, name: 'Döbi', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
         {
             bandId: 3,
-            name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            name: 'Züri West',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 5, role: 1, name: 'Kuno', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+                { id: 3, role: 2, name: 'Bello', imgUrl: 'https://placehold.co/400x400' },
+                { id: 4, role: 2, name: 'Döbi', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
         {
             bandId: 4,
-            name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            name: 'Royal Blood',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 6, role: 1, name: 'Mike', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
         {
             bandId: 6,
-            name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            name: 'Muse',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 7, role: 1, name: 'Matt', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+                { id: 3, role: 2, name: 'Bello', imgUrl: 'https://placehold.co/400x400' },
+                { id: 4, role: 2, name: 'Döbi', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
         {
             bandId: 7,
-            name: 'Lord Lawrence & the Lard Guitar',
-            imgUrl: '',
+            name: 'No Valid Name',
+            imgUrl: 'https://placehold.co/400x400',
             description: 'test description',
+            members: [
+                { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
+                { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },
+                { id: 3, role: 2, name: 'Löru', imgUrl: 'https://placehold.co/400x400' },
+                { id: 4, role: 2, name: 'Stampfli', imgUrl: 'https://placehold.co/400x400' },
+            ]
         },
     ],
 }))
+
+export default useStore;
