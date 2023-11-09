@@ -1,7 +1,8 @@
 "use client"
 import { useState, useRef } from 'react';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/Image';
 
 import useStore from "@/store/store";
 import Icon from "@/components/Icon/Icon";
@@ -30,7 +31,7 @@ export default function Header() {
             <div className="sticky top-0 py-2 shadow-md bg-slate-950 text-slate-50 z-10">
                 <div className="container flex justify-between items-center w-full">
                     <Link className="flex items-center" href="/">
-                        <img className="w-14 rounded-full mr-5" src="/logos/logo-96.png" />
+                        <Image className="w-14 rounded-full mr-5" width={56} height={56} src="/logos/logo-96.png" />
                         <h1>Shookbox</h1>
                     </Link>
                     <div className="flex flex-row">
