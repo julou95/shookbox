@@ -9,7 +9,7 @@ export default function BandsPage() {
         <main className="">
             <h1>All Bands</h1>
             <hr />
-            <BandList bands={bands} />
+            <BandList bands={bands} full />
         </main>
     )
 }
