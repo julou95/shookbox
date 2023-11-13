@@ -34,7 +34,7 @@ export default function AddBandPage() {
                 <input type="text" className="rounded-md mb-5" ref={nameRef}/>
 
                 <label>
-                    Genre: <span className="opacity-50">(eg: "rock, alternative, progressive...")</span>
+                    Genre: <span className="opacity-50">(eg: &quot;rock, alternative, progressive...&quot;)</span>
                 </label>
                 <input type="text" className="rounded-md mb-5" ref={nameRef}/>
 
