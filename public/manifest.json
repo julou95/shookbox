@@ -1,0 +1,17 @@
+{
+  "name": "Shookbox Hub",
+  "short_name": "SBH",
+  "icons": [
+    {
+      "src": "/logos/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0f172a",
+  "background_color": "#f9fafb",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

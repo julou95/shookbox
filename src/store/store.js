@@ -7,6 +7,14 @@ const useStore = create((set) => ({
         refreshToken: '2345',
         name: 'Louis'
     },
+    musicPlayer: {
+        currentSong: {},
+        playlist: [],
+        controls: {
+            shuffle: false,
+            repeat: false,
+        }
+    },
     users: [
         { id: 1, role: 1, name: 'Louis', imgUrl: 'https://placehold.co/400x400' },
         { id: 2, role: 2, name: 'Chrigu', imgUrl: 'https://placehold.co/400x400' },

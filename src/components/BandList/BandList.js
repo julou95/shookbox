@@ -6,13 +6,10 @@ import Icon from "@/components/Icon/Icon";
 export default function BandList({ bands = [], addNew = false, title, full = false }) {
     const [isStart, setIsStart] = useState(true)
     const [isEnd, setIsEnd] = useState(false)
-    const [scrollY, setScrollY] = useState()
     const scrollRef = useRef()
 
     useEffect(() => {
-        //add eventlistener to window
         scrollRef.current.addEventListener("scroll", onScrollNew, { passive: true });
-        // remove event on unmount to prevent a memory leak with the cleanup
     }, []);
 
     const onScrollNew = () => {
